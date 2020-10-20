@@ -42,7 +42,7 @@ public class servlet_demo extends HttpServlet {
 		// If any are empty, set the url to forward to to the error page.
 		// Otherwise, forward to the normal reciept
 		if (name.equals("") || email.equals("") || quantity.equals("")) {
-			url = "error.jsp";
+			url = "/error.jsp";
 		} else {
 			url = "/assignment03/reciept_ass03_02.jsp";
 		}

@@ -9,7 +9,6 @@
 </head>
 <body>
 	<div class="bg">
-		<a href="/Assignments/Assignments"> Click here </a>
 		<div class="displayGithub">
 			<!-- https://lab.lepture.com/github-cards/ -->
 			<div class="github-card" data-github="tiennhm" data-width="350"
