@@ -25,7 +25,7 @@
 		%>
 
 		<form action="${pageContext.request.contextPath}/Validate"
-			class="display formSubmit">
+			class="display formSubmit" method="post">
 			<h2 style="text-align: center">Order Confirmation</h2>
 			<p>
 			Trường Đ quốc tế

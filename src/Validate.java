@@ -26,6 +26,7 @@ public class Validate extends HttpServlet {
 			throws ServletException, IOException {
 		String quantity = request.getParameter("quantity");
 		if (quantity.equals("")) {
+			request.setAttribute("backURL", "/assignment03/ass03_01.jsp");
 			return "/error.jsp";
 		} else {
 			return "/assignment03/reciept_ass03_01.jsp";
@@ -42,6 +43,7 @@ public class Validate extends HttpServlet {
 		// If any are empty, set the url to forward to to the error page.
 		// Otherwise, forward to the normal reciept
 		if (name.equals("") || email.equals("") || quantity.equals("")) {
+			request.setAttribute("backURL", "/assignment03/ass03_02.jsp");
 			return "/error.jsp";
 		} else {
 			return "/assignment03/reciept_ass03_02.jsp";
@@ -56,12 +58,12 @@ public class Validate extends HttpServlet {
 
 		String processor_submit = "";
 		if (processor != null) {
-			processor_submit = (String)processor;
+			processor_submit = (String) processor;
 			if (processor.equals("Celeron D")) {
 				processor_submit += "<br /> <i>Have you considered a more powerful processor?</i>";
-			} else {
-				processor_submit += "No processor selected.";
 			}
+		} else {
+			processor_submit += "No processor selected.";
 		}
 
 		String accessories = "";
@@ -70,10 +72,10 @@ public class Validate extends HttpServlet {
 		}
 		if (peripherals != null) {
 			for (int i = 0; i < peripherals.length; i++) {
-				accessories += (String)peripherals[i] + "<br />";
+				accessories += (String) peripherals[i] + "<br />";
 			}
 		}
-		
+
 		request.setAttribute("processor", processor_submit);
 		request.setAttribute("accessories", accessories);
 		return "/assignment03/reciept_ass03_03.jsp";
@@ -87,27 +89,33 @@ public class Validate extends HttpServlet {
 			throws ServletException, IOException {
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
-
-		String url = ""; // url to forward to
+		request.setCharacterEncoding("UTF-8");
+		
 		// Get current action
 		String action = request.getParameter("action");
-
-		if (action.equals("formSubmit_ass03_01")) {
-			url = FormSubmit_ass03_01(request, response);
-		} else if (action.equals("formSubmit_ass03_02")) {
-			url = FormSubmit_ass03_02(request, response);
-		} else if (action.equals("formSubmit_ass03_03")) {
-			url = FormSubmit_ass03_03(request, response);
-		} else if (action.equals("back_ass03_01")) {
-			url = "/assignment03/ass03_01.jsp";
-		} else if (action.equals("back_ass03_02")) {
-			url = "/assignment03/ass03_02.jsp";
-		} else if (action.equals("back_ass03_03")) {
-			url = "/assignment03/ass03_03.jsp";
+		if (action.equals("back")) {
+			request.getRequestDispatcher(request.getParameter("backURL")).forward(request, response);
+		} else {
+			String url = ""; // url to forward to
+			
+			if (action.equals("formSubmit_ass03_01")) {
+				url = FormSubmit_ass03_01(request, response);
+			} else if (action.equals("formSubmit_ass03_02")) {
+				url = FormSubmit_ass03_02(request, response);
+			} else if (action.equals("formSubmit_ass03_03")) {
+				url = FormSubmit_ass03_03(request, response);
+			} else if (action.equals("back_ass03_01")) {
+				url = "/assignment03/ass03_01.jsp";
+			} else if (action.equals("back_ass03_02")) {
+				url = "/assignment03/ass03_02.jsp";
+			} else if (action.equals("back_ass03_03")) {
+				url = "/assignment03/ass03_03.jsp";
+			}
+			
+			// Create the dispatcher from the url and perform the forward
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+			dispatcher.forward(request, response);
 		}
-		// Create the dispatcher from the url and perform the forward
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-		dispatcher.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

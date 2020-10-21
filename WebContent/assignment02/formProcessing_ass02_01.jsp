@@ -18,8 +18,21 @@
 		String email = request.getParameter("customerEmail");
 		String quantity = request.getParameter("quantity");
 		double pricePerUnit = 9.95;
-		int quantityNumber = Integer.parseInt(quantity);
-		double totalCost = pricePerUnit * quantityNumber;
+		int quantityNumber = 0;
+		double totalCost = 0; 
+		try
+		{
+			quantityNumber = Integer.parseInt(quantity);
+		}
+		catch (Exception e)
+		{
+			
+		}
+		finally
+		{
+			totalCost = pricePerUnit * quantityNumber;
+		}
+		
 		%>
 
 		<form action="ass02_01.jsp" class="display formSubmit">
