@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Assignment 02 - 01</title>
+	<title>Assignment 3 - 2</title>
 	<link href="main.css" rel="Stylesheet" type="text/css">
 </head>
 

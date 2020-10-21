@@ -22,10 +22,16 @@ public class Validate extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
+	private String FormSubmit_ass03_01(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String quantity = request.getParameter("quantity");
+		if (quantity.equals("")) {
+			return "/error.jsp";
+		} else {
+			return "/assignment03/reciept_ass03_01.jsp";
+		}
+	}
+
 	private String FormSubmit_ass03_02(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// Get the parameter values from the request
@@ -42,6 +48,15 @@ public class Validate extends HttpServlet {
 		}
 	}
 
+	private String FormSubmit_ass03_03(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		return "/assignment03/reciept_ass03_03.jsp";
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setContentType("text/html");
@@ -50,12 +65,13 @@ public class Validate extends HttpServlet {
 		String url = ""; // url to forward to
 		// Get current action
 		String action = request.getParameter("action");
-		if (action.equals("formSubmit_ass03_02")) {
+
+		if (action.equals("formSubmit_ass03_01")) {
+			url = FormSubmit_ass03_01(request, response);
+		} else if (action.equals("formSubmit_ass03_02")) {
 			url = FormSubmit_ass03_02(request, response);
-		}
-		else if (action.equals("formSubmit_ass03_01"))
-		{
-			
+		} else if (action.equals("formSubmit_ass03_03")) {
+			url = FormSubmit_ass03_03(request, response);
 		}
 		// Create the dispatcher from the url and perform the forward
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

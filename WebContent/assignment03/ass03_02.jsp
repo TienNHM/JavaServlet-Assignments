@@ -35,7 +35,7 @@
 					<td><input type="text" name="customerEmail" id="customerEmail" /></td>
 				</tr>
 			</table>
-			<input type="hidden" name="action" value="submitForm_ass03_02">
+			<input type="hidden" name="action" value="formSubmit_ass03_02">
 			<input type="submit" value="Submit" />
 		</form>
 	</div>
