@@ -20,7 +20,7 @@
 		double totalCost = pricePerUnit * quantityNumber;
 		%>
 
-		<form action="ass02_01.jsp" class="display formSubmit">
+		<form action="../ass03_02.jsp" class="display formSubmit">
 			<h2 style="text-align: center">Order Confirmation</h2>
 			<p>
 				Thank you for your order of

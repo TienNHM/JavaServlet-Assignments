@@ -4,15 +4,17 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>Assignment 02 - 01</title>
-	<link href="main.css" rel="Stylesheet" type="text/css">
-	<link href="ass03_02.css" rel="Stylesheet" type="text/css">
+<meta charset="UTF-8">
+<title>Assignment 02 - 01</title>
+<link href="main.css" rel="Stylesheet" type="text/css">
+<link href="ass03_02.css" rel="Stylesheet" type="text/css">
 </head>
 
 <body>
 	<div class="bg">
-		<form class="formSubmit" action="${pageContext.request.contextPath}/servlet_demo" name="purchaseform" method="post">
+		<form class="formSubmit"
+			action="${pageContext.request.contextPath}/Validate"
+			name="purchaseform" method="post">
 
 			<table style="width: 100%">
 				<tr>
@@ -33,6 +35,7 @@
 					<td><input type="text" name="customerEmail" id="customerEmail" /></td>
 				</tr>
 			</table>
+			<input type="hidden" name="action" value="submitForm_ass03_02">
 			<input type="submit" value="Submit" />
 		</form>
 	</div>
