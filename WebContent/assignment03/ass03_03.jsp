@@ -7,8 +7,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Assignment 3 - 3</title>
-<link rel="Stylesheet" href="main.css" type="text/css" />
-<link rel="Stylesheet" href="ass03_03.css" type="text/css" />
+<link rel="Stylesheet" href="${pageContext.request.contextPath}/assignment03/css/main.css" type="text/css" />
+<link rel="Stylesheet" href="${pageContext.request.contextPath}/assignment03/css/ass03_03.css" type="text/css" />
 <style type="text/css">
 table {
 	width: 100%;

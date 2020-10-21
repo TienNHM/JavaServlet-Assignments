@@ -6,7 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Assignment 3 - 2</title>
-<link href="main.css" rel="Stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/assignment03/css/main.css" rel="Stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/assignment03/css/ass03_02.css" rel="Stylesheet" type="text/css">
 </head>
 
 <body>
