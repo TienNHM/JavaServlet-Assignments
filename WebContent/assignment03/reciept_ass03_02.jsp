@@ -28,18 +28,13 @@
 			class="display formSubmit" method="post">
 			<h2 style="text-align: center">Order Confirmation</h2>
 			<p>
-			Trường Đ quốc tế
-				Thank you for your order of
-				<%=quantity%>
-				widgets,
-				<%=name%>.
+				Thank you for your order of <%=quantity%> widgets, <%=name%>.
 			</p>
 			<p>
 				At $<%=pricePerUnit%>, your bill will be $<%=totalCost%>.
 			</p>
 			<p>
-				You will shortly recieve an email confirmation at
-				<%=email%>.
+				You will shortly recieve an email confirmation at <%=email%>.
 			</p>
 			<input type="hidden" name="action" value="back_ass03_02" /> 
 			<input type="submit" value="Back" />
