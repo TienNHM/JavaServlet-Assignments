@@ -11,12 +11,13 @@
 
 <body>
 	<div class="bg">
-		<form action="index.jsp" class="display formSubmit">
+		<form action="${pageContext.request.contextPath}/Validate" class="display formSubmit">
 			<p>
 				Thank you for your order of
 				<%=request.getParameter("quantity")%>
 				widgets!
 			</p>
+			<input type="hidden" name="action" value="back_ass03_01" />
 			<input type="submit" value="Back" />
 		</form>
 	</div>

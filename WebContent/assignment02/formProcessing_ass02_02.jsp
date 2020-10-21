@@ -7,11 +7,6 @@
 <title>Assignment 02 - 02</title>
 <link rel="Stylesheet" href="main.css" type="text/css" />
 <link rel="Stylesheet" href="ass02_02.css" type="text/css" />
-<style type="text/css">
-form {
-	text-align: center;
-}
-</style>
 </head>
 <body>
 	<%
@@ -42,12 +37,14 @@ form {
 						<% if (monitor != null) {%>
 								Monitor <br />
 						<% } %>
+						
 						<% for (int i = 0; i < peripherals.length; i++) { %>
          					<%= peripherals[i] %> <br />
   						<% } %>
 					</td>
 				</tr>
 			</table>
+			<input type="submit" value="Back" style="text-align: center;"/>
 		</form>
 	</div>
 </body>
