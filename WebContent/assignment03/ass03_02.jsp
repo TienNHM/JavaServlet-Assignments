@@ -4,7 +4,7 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>Assignment 02 - 01</title>
 <link href="${pageContext.request.contextPath}/assignment03/css/main.css" rel="Stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath}/assignment03/css/ass03_02.css" rel="Stylesheet" type="text/css">

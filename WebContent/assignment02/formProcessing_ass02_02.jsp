@@ -5,11 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Assignment 02 - 02</title>
-<link rel="Stylesheet" href="main.css" type="text/css" />
-<link rel="Stylesheet" href="ass02_02.css" type="text/css" />
+<link rel="Stylesheet" href="css/main.css" type="text/css" />
+<link rel="Stylesheet" href="css/ass02_02.css" type="text/css" />
 </head>
 <body>
 	<%
+		request.setCharacterEncoding("UTF-8");
 		String monitor = request.getParameter("monitor");
 		String processor = request.getParameter("processor");
 		String[] peripherals = request.getParameterValues("peripherals");

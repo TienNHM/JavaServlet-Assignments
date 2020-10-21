@@ -6,13 +6,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Assignment 02 - 01</title>
-	<link href="main.css" rel="Stylesheet" type="text/css">
+	<link href="css/main.css" rel="Stylesheet" type="text/css">
+	<link href="css/ass02_02.css" rel="Stylesheet" type="text/css">
 </head>
 
 <body>
 	<div class="bg">
 		<%
-			String name = request.getParameter("customername");
+		request.setCharacterEncoding("UTF-8");
+		String name = request.getParameter("customername");
 		String email = request.getParameter("customerEmail");
 		String quantity = request.getParameter("quantity");
 		double pricePerUnit = 9.95;

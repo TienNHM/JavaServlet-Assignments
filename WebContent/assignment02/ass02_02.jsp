@@ -7,8 +7,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Assignment 02 - 02</title>
-	<link rel="Stylesheet" href="main.css" type="text/css" />
-	<link rel="Stylesheet" href="ass02_02.css" type="text/css" />
+	<link rel="Stylesheet" href="css/main.css" type="text/css" />
+	<link rel="Stylesheet" href="css/ass02_02.css" type="text/css" />
 	<style type="text/css">
 		table {
 			width: 100%;

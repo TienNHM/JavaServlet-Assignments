@@ -4,7 +4,7 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>Assignment 3 - 2</title>
 <link href="${pageContext.request.contextPath}/assignment03/css/main.css" rel="Stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath}/assignment03/css/ass03_02.css" rel="Stylesheet" type="text/css">
@@ -13,9 +13,12 @@
 <body>
 	<div class="bg">
 		<%
-			String name = request.getParameter("customername");
+		response.setContentType("text/html;charset=UTF-8");
+		request.setCharacterEncoding("utf-8");	
+		String name = request.getParameter("customerName");
 		String email = request.getParameter("customerEmail");
 		String quantity = request.getParameter("quantity");
+		
 		double pricePerUnit = 9.95;
 		int quantityNumber = Integer.parseInt(quantity);
 		double totalCost = pricePerUnit * quantityNumber;
@@ -25,6 +28,7 @@
 			class="display formSubmit">
 			<h2 style="text-align: center">Order Confirmation</h2>
 			<p>
+			Trường Đ quốc tế
 				Thank you for your order of
 				<%=quantity%>
 				widgets,
