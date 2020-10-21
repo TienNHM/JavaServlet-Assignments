@@ -6,8 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Assignment 02 - 01</title>
-<link href="main.css" rel="Stylesheet" type="text/css">
-<link href="ass03_02.css" rel="Stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/assignment03/css/main.css" rel="Stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/assignment03/css/ass03_02.css" rel="Stylesheet" type="text/css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
 					<td><input type="text" name="customerEmail" id="customerEmail" /></td>
 				</tr>
 			</table>
-			<input type="hidden" name="action" value="submitForm_ass03_02">
+			<input type="hidden" name="action" value="formSubmit_ass03_02">
 			<input type="submit" value="Submit" />
 		</form>
 	</div>

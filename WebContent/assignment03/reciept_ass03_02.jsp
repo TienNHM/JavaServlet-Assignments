@@ -4,9 +4,10 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>Assignment 02 - 01</title>
-	<link href="main.css" rel="Stylesheet" type="text/css">
+<meta charset="UTF-8">
+<title>Assignment 3 - 2</title>
+<link href="${pageContext.request.contextPath}/assignment03/css/main.css" rel="Stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/assignment03/css/ass03_02.css" rel="Stylesheet" type="text/css">
 </head>
 
 <body>
@@ -20,7 +21,8 @@
 		double totalCost = pricePerUnit * quantityNumber;
 		%>
 
-		<form action="../ass03_02.jsp" class="display formSubmit">
+		<form action="${pageContext.request.contextPath}/Validate"
+			class="display formSubmit">
 			<h2 style="text-align: center">Order Confirmation</h2>
 			<p>
 				Thank you for your order of
@@ -35,7 +37,7 @@
 				You will shortly recieve an email confirmation at
 				<%=email%>.
 			</p>
-
+			<input type="hidden" name="action" value="back_ass03_02" /> 
 			<input type="submit" value="Back" />
 		</form>
 	</div>

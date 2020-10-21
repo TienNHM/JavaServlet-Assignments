@@ -4,50 +4,32 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Assignment 02 - 02</title>
-<link rel="Stylesheet" href="main.css" type="text/css" />
-<link rel="Stylesheet" href="ass02_02.css" type="text/css" />
-<style type="text/css">
-form {
-	text-align: center;
-}
-</style>
+<title>Assignment 3 - 3</title>
+<link href="${pageContext.request.contextPath}/assignment03/css/main.css" rel="Stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/assignment03/css/ass03_03.css" rel="Stylesheet" type="text/css">
 </head>
 <body>
-	<%
-		String monitor = request.getParameter("monitor");
-		String processor = request.getParameter("processor");
-		String[] peripherals = request.getParameterValues("peripherals");
-	%>
+
 	<div class="bg">
-		<form class="formSubmit" action="ass02_02.jsp" method="post">
+		<form class="formSubmit"
+			action="${pageContext.request.contextPath}/Validate" method="post">
 			<h3>Order summary:</h3>
 			<table>
 				<tr>
 					<td>Processor:</td>
 					<td>
-						<% if (processor != null) { %>
-							<%=processor%>
-							<% if (processor.equals("Celeron D")) { %> <br /> 
-							<i>Have you considered a more powerful processor?</i>
-							<% } %>
-						<% } else { %>
-							No processor selected.
-						<% } %>
+						${processor}
 					</td>
 				</tr>
 				<tr>
 					<td>Accessories:</td>
 					<td>
-						<% if (monitor != null) {%>
-								Monitor <br />
-						<% } %>
-						<% for (int i = 0; i < peripherals.length; i++) { %>
-         					<%= peripherals[i] %> <br />
-  						<% } %>
+						${accessories}
 					</td>
 				</tr>
 			</table>
+			<input type="hidden" name="action" value ="back_ass03_03"/>
+			<input type="submit" value="Back" style="text-align: center;"/>
 		</form>
 	</div>
 </body>

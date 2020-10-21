@@ -22,10 +22,16 @@ public class Validate extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
+	private String FormSubmit_ass03_01(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String quantity = request.getParameter("quantity");
+		if (quantity.equals("")) {
+			return "/error.jsp";
+		} else {
+			return "/assignment03/reciept_ass03_01.jsp";
+		}
+	}
+
 	private String FormSubmit_ass03_02(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// Get the parameter values from the request
@@ -42,6 +48,41 @@ public class Validate extends HttpServlet {
 		}
 	}
 
+	private String FormSubmit_ass03_03(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String monitor = request.getParameter("monitor");
+		String processor = request.getParameter("processor");
+		String[] peripherals = request.getParameterValues("peripherals");
+
+		String processor_submit = "";
+		if (processor != null) {
+			processor_submit = (String)processor;
+			if (processor.equals("Celeron D")) {
+				processor_submit += "<br /> <i>Have you considered a more powerful processor?</i>";
+			} else {
+				processor_submit += "No processor selected.";
+			}
+		}
+
+		String accessories = "";
+		if (monitor != null) {
+			accessories = "Monitor <br />";
+		}
+		if (peripherals != null) {
+			for (int i = 0; i < peripherals.length; i++) {
+				accessories += (String)peripherals[i] + "<br />";
+			}
+		}
+		
+		request.setAttribute("processor", processor_submit);
+		request.setAttribute("accessories", accessories);
+		return "/assignment03/reciept_ass03_03.jsp";
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setContentType("text/html");
@@ -50,12 +91,19 @@ public class Validate extends HttpServlet {
 		String url = ""; // url to forward to
 		// Get current action
 		String action = request.getParameter("action");
-		if (action.equals("formSubmit_ass03_02")) {
+
+		if (action.equals("formSubmit_ass03_01")) {
+			url = FormSubmit_ass03_01(request, response);
+		} else if (action.equals("formSubmit_ass03_02")) {
 			url = FormSubmit_ass03_02(request, response);
-		}
-		else if (action.equals("formSubmit_ass03_01"))
-		{
-			
+		} else if (action.equals("formSubmit_ass03_03")) {
+			url = FormSubmit_ass03_03(request, response);
+		} else if (action.equals("back_ass03_01")) {
+			url = "/assignment03/ass03_01.jsp";
+		} else if (action.equals("back_ass03_02")) {
+			url = "/assignment03/ass03_02.jsp";
+		} else if (action.equals("back_ass03_03")) {
+			url = "/assignment03/ass03_03.jsp";
 		}
 		// Create the dispatcher from the url and perform the forward
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
