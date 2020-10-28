@@ -12,7 +12,7 @@
 
 	<div class="bg">
 		<form class="formSubmit"
-			action="${pageContext.request.contextPath}/Validate" method="post">
+			action="${pageContext.request.contextPath}/form_processing.jsp" method="post">
 			<h3>Order summary:</h3>
 			<table>
 				<tr>

@@ -10,7 +10,7 @@
 <body>
 	<div class="bg">
 		<form class="formSubmit"
-			action="${pageContext.request.contextPath}/Validate" method="post">
+			action="${pageContext.request.contextPath}/form_processing.jsp" method="post">
 			<p align="center">Something error occurs.</p>
 			<input type="hidden" name="action" value="back" />
 			<input type="hidden" name="backURL" value="${backURL}" />

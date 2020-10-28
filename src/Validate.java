@@ -7,19 +7,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class servlet_demo
- */
-@WebServlet("/Validate")
+// @WebServlet("/Validate")
+@WebServlet(value = "/form_processing.jsp")
 public class Validate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
+	
 	public Validate() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	private String FormSubmit_ass03_01(HttpServletRequest request, HttpServletResponse response)
@@ -81,10 +75,6 @@ public class Validate extends HttpServlet {
 		return "/assignment03/reciept_ass03_03.jsp";
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setContentType("text/html");

@@ -25,14 +25,14 @@ td {
 <body>
 	<div class="bg">
 		<form class="formSubmit"
-			action="${pageContext.request.contextPath}/Validate" method="post">
+			action="../form_processing.jsp" method="post">
 
 			<div class="row">
 				<div class="column">
 					<h3>Processor</h3>
 					<div>
-						<input type="radio" name="processor" value="Celeron D">Celeron
-						D<BR> <input type="radio" name="processor" value="Pentium IV">
+						<input type="radio" name="processor" value="Celeron D">Celeron D<BR> 
+						<input type="radio" name="processor" value="Pentium IV">
 						Pentium IV<BR> <input type="radio" name="processor"
 							value="Pentium D"> Pentium D
 					</div>

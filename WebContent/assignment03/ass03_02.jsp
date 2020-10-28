@@ -13,7 +13,7 @@
 <body>
 	<div class="bg">
 		<form class="formSubmit"
-			action="${pageContext.request.contextPath}/Validate"
+			action="${pageContext.request.contextPath}/form_processing.jsp"
 			name="purchaseform" method="post">
 
 			<table style="width: 100%">

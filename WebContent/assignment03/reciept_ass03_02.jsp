@@ -24,7 +24,7 @@
 		double totalCost = pricePerUnit * quantityNumber;
 		%>
 
-		<form action="${pageContext.request.contextPath}/Validate"
+		<form action="${pageContext.request.contextPath}/form_processing.jsp"
 			class="display formSubmit" method="post">
 			<h2 style="text-align: center">Order Confirmation</h2>
 			<p>
