@@ -6,18 +6,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Assignment 02 - 01</title>
-	<link href="main.css" rel="Stylesheet" type="text/css">
+	<link href="css/main.css" rel="Stylesheet" type="text/css">
+	<link href="css/ass02_02.css" rel="Stylesheet" type="text/css">
 </head>
 
 <body>
 	<div class="bg">
 		<%
-			String name = request.getParameter("customername");
+		request.setCharacterEncoding("UTF-8");
+		String name = request.getParameter("customername");
 		String email = request.getParameter("customerEmail");
 		String quantity = request.getParameter("quantity");
 		double pricePerUnit = 9.95;
-		int quantityNumber = Integer.parseInt(quantity);
-		double totalCost = pricePerUnit * quantityNumber;
+		int quantityNumber = 0;
+		double totalCost = 0; 
+		try
+		{
+			quantityNumber = Integer.parseInt(quantity);
+		}
+		catch (Exception e)
+		{
+			
+		}
+		finally
+		{
+			totalCost = pricePerUnit * quantityNumber;
+		}
+		
 		%>
 
 		<form action="ass02_01.jsp" class="display formSubmit">

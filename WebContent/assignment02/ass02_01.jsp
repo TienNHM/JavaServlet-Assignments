@@ -6,8 +6,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Assignment 02 - 01</title>
-	<link href="main.css" rel="Stylesheet" type="text/css">
-	<link href="ass02_01.css" rel="Stylesheet" type="text/css">
+	<link href="css/main.css" rel="Stylesheet" type="text/css">
+	<link href="css/ass02_01.css" rel="Stylesheet" type="text/css">
 </head>
 
 <body>

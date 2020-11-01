@@ -9,8 +9,11 @@
 </head>
 <body>
 	<div class="bg">
-		<form class="formSubmit" action="index.jsp" name="back" method="post">
+		<form class="formSubmit"
+			action="${pageContext.request.contextPath}/form_processing.jsp" method="post">
 			<p align="center">Something error occurs.</p>
+			<input type="hidden" name="action" value="back" />
+			<input type="hidden" name="backURL" value="${backURL}" />
 			<input type="submit" value="Back" />
 		</form>
 	</div>
