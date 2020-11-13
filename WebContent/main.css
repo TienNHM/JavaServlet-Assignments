@@ -8,6 +8,11 @@ body, html {
 	left: 50%;
 }
 
+h1 {
+	font-family: 'Anton', 'Bungee Shade', 'Goldman', 'Open Sans';
+	font-size: 8vw;
+}
+
 form, .display {
 	display: inline-block;
 	top: 50%;
@@ -90,4 +95,8 @@ input[type=submit] {
 	-webkit-transform: translate3d(-50%, -50%, 0);
 	-moz-transform: translate3d(-50%, -50%, 0);
 	transform: translate3d(-50%, -50%, 0);
+}
+
+.card-background {
+	background-color: #CAFAFE;
 }

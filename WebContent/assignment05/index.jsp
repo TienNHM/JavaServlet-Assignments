@@ -11,12 +11,12 @@
 <body>
 	<%!
 		public boolean find(String[] list, String target) {
-	        if (list == null) {return false;}
-	        for (int i = 0; i < list.length; i++) {
-	           if (target.equals(list[i])) {return true;}
-	           }
-	        return false;
-	    }
+        if (list == null) {return false;}
+        for (int i = 0; i < list.length; i++) {
+           if (target.equals(list[i])) {return true;}
+           }
+        return false;
+	   }
 	%>
 	<div class="container">
 		<h1 style="text-align: center; height: 80px; margin-top: 30px;">ENTER YOUR INFORMATION</h1>
@@ -91,9 +91,9 @@
 					    <div class="form-group row">
 					    	<% 
 					    	String cardNumber = request.getParameter("cardNumber");
-							if (cardNumber==null) cardNumber="";
-					    	String creditCardNumberError = (String)request.getParameter("creditCardNumberError");
-							if (creditCardNumberError==null) creditCardNumberError="";
+								if (cardNumber==null) cardNumber="";
+						    	String creditCardNumberError = (String)request.getParameter("creditCardNumberError");
+								if (creditCardNumberError==null) creditCardNumberError="";
 					    	%>
 							<label	for="cardNumber" 
 									class="row-form-label col-3 text-right">Number:</label>
