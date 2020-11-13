@@ -3,20 +3,23 @@
 <!DOCtype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Assignments</title>
-<link rel="Stylesheet" href="main.css" type="text/css" />
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-<!-- https://lab.lepture.com/github-cards/  -->
+	<meta charset="UTF-8">
+	<title>Assignments</title>
+	<link rel="Stylesheet" href="main.css" type="text/css" />
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" 
+				        			rel="stylesheet">
+	<!-- https://lab.lepture.com/github-cards/  -->
 </head>
 <body>
 	<div class="container">
 		<h1 style="text-align: center; height: 80px; margin-top: 30px;">NGUYỄN HUỲNH MINH TIẾN</h1>
+		
 		<div>
 			<h3>Assignment 01</h3>
 			<hr />
-			<div class="card text-center" style="width: 18rem;">
+			<div class="card text-center border-danger" style="width: 18rem;">
 				<div class="card-body">
 					<h5 class="card-title">Assignment 01</h5>
 					<p class="card-text">First web application with JSP</p>
@@ -29,7 +32,7 @@
 			<h3>Assignment 02</h3>
 			<hr />
 			<div class="form-group row">
-				<div class="card text-center col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 02 - 1</h5>
 						<p class="card-text">Widget order form</p>
@@ -38,7 +41,7 @@
 							class="btn btn-primary ">Go</a>
 					</div>
 				</div>
-				<div class="card text-center col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 02 - 2</h5>
 						<p class="card-text">Complex input element</p>
@@ -53,7 +56,7 @@
 			<h3>Assignment 03</h3>
 			<hr />
 			<div class="form-group row">
-				<div class="card text-center col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 03 - 1</h5>
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
@@ -63,7 +66,7 @@
 							class="btn btn-primary ">Go</a>
 					</div>
 				</div>
-				<div class="card text-center col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 03 - 2</h5>
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
@@ -73,7 +76,7 @@
 							class="btn btn-primary ">Go</a>
 					</div>
 				</div>
-				<div class="card text-center col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 03 - 3</h5>
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
@@ -89,7 +92,7 @@
 			<h3>Assignment 04</h3>
 			<hr />
 			<div class="form-group row">
-				<div class="card text-center col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 04 - 1</h5>
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
@@ -99,7 +102,7 @@
 							class="btn btn-primary ">Go</a>
 					</div>
 				</div>
-				<div class="card text-center col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 04 - 2</h5>
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
@@ -109,7 +112,7 @@
 							class="btn btn-primary ">Go</a>
 					</div>
 				</div>
-				<div class="card text-center col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 04 - 3</h5>
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
@@ -124,7 +127,7 @@
 		<div>
 			<h3>Assignment 05</h3>
 			<hr />
-			<div class="card text-center" style="width: 18rem;">
+			<div class="card text-center border-danger" style="width: 18rem;">
 				<div class="card-body">
 					<h5 class="card-title">Assignment 05</h5>
 					<p class="card-text">Input Validation and Error Handling</p>
