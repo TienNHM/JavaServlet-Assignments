@@ -13,13 +13,19 @@
 	<!-- https://lab.lepture.com/github-cards/  -->
 </head>
 <body>
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+		<img src="https://img.icons8.com/emoji/48/000000/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
+    HOME
+  </a>
+  </nav>
 	<div class="container">
 		<h1 style="text-align: center; height: 80px; margin-top: 30px;">NGUYỄN HUỲNH MINH TIẾN</h1>
-		
+		<h2 style="text-align: center;">MSSV: 18110377</h2>
 		<div>
 			<h3>Assignment 01</h3>
 			<hr />
-			<div class="card text-center border-danger" style="width: 18rem;">
+			<div class="card text-center border-info" style="width: 18rem;">
 				<div class="card-body">
 					<h5 class="card-title">Assignment 01</h5>
 					<p class="card-text">First web application with JSP</p>
@@ -32,7 +38,7 @@
 			<h3>Assignment 02</h3>
 			<hr />
 			<div class="form-group row">
-				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-success col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 02 - 1</h5>
 						<p class="card-text">Widget order form</p>
@@ -41,7 +47,7 @@
 							class="btn btn-primary ">Go</a>
 					</div>
 				</div>
-				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-success col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 02 - 2</h5>
 						<p class="card-text">Complex input element</p>
@@ -49,6 +55,7 @@
 							href="${pageContext.request.contextPath}/assignment02/ass02_02.jsp"
 							class="btn btn-primary ">Go</a>
 					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -56,7 +63,7 @@
 			<h3>Assignment 03</h3>
 			<hr />
 			<div class="form-group row">
-				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-warning col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 03 - 1</h5>
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
@@ -66,7 +73,7 @@
 							class="btn btn-primary ">Go</a>
 					</div>
 				</div>
-				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-warning col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 03 - 2</h5>
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
@@ -76,7 +83,7 @@
 							class="btn btn-primary ">Go</a>
 					</div>
 				</div>
-				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
+				<div class="card text-center border-warning col-3 ml-3" style="width: 18rem;">
 					<div class="card-body">
 						<h5 class="card-title">Assignment 03 - 3</h5>
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
@@ -127,7 +134,7 @@
 		<div>
 			<h3>Assignment 05</h3>
 			<hr />
-			<div class="card text-center border-danger" style="width: 18rem;">
+			<div class="card text-center border-primary" style="width: 18rem;">
 				<div class="card-body">
 					<h5 class="card-title">Assignment 05</h5>
 					<p class="card-text">Input Validation and Error Handling</p>

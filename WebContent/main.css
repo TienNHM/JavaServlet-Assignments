@@ -13,6 +13,11 @@ h1 {
 	font-size: 8vw;
 }
 
+h2 {
+	font-family: 'Goldman', 'Open Sans';
+	font-size: 2vw;
+}
+
 form, .display {
 	display: inline-block;
 	top: 50%;
