@@ -7,12 +7,19 @@
 	<meta charset="UTF-8">
 	<title>Assignment 01</title>
 	<link type="text/css" rel="Stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-	<div class="bg">
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="../">
+		<img src="https://img.icons8.com/emoji/48/000000/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
+    HOME
+  </a>
+  </nav>
+	<div>
 		<form action="index.jsp" class="display formSubmit">
-			<p>
+			<p style="text-align: center;">
 				Thank you for your order of
 				<%=request.getParameter("quantity")%>
 				widgets!

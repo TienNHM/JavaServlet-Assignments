@@ -6,6 +6,7 @@
 	<meta content="text/html; charset=utf-8" />
 	<title>Order</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css" type="text/css" /> 
 </head>
 <body>
@@ -18,6 +19,12 @@
         return false;
 	   }
 	%>
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="${pageContext.request.contextPath}/">
+		<img src="https://img.icons8.com/emoji/48/000000/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
+    HOME
+  </a>
+	</nav>
 	<div class="container">
 		<h1 style="text-align: center; height: 80px; margin-top: 30px;">ENTER YOUR INFORMATION</h1>
 		<form action="${pageContext.request.contextPath}/assignment05" method=post>

@@ -9,6 +9,7 @@
 	<title>Assignment 02 - 02</title>
 	<link rel="Stylesheet" href="css/main.css" type="text/css" />
 	<link rel="Stylesheet" href="css/ass02_02.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 	<style type="text/css">
 		table {
 			width: 100%;
@@ -23,7 +24,13 @@
 </head>
 
 <body>
-	<div class="bg">
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="${pageContext.request.contextPath}/">
+		<img src="https://img.icons8.com/emoji/48/000000/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
+    HOME
+  </a>
+  </nav>
+	<div>
 		<form class="formSubmit" action="formProcessing_ass02_02.jsp" method="post">
 			<div class="row">
 				<div class="column">
@@ -44,7 +51,7 @@
 					</select>
 				</div>
 			</div>
-			<input type="submit" value="PURCHASE" />
+			<input type="submit" value="Purchase" size="8" />
 		</form>
 	</div>
 </body>
