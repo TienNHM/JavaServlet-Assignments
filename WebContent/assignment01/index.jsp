@@ -17,7 +17,7 @@
     HOME
   </a>
   </nav>
-	<div class="bg">
+	<div>
 		<form class="formSubmit" action="formProcessing_ass01.jsp" name="purchaseform" method="post">
 			<div align="left">Quantity:</div>
 			<input type="text" size="50" name="quantity" /> <br /> <input type="submit" value="Submit" />

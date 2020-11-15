@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+body {
+	background-image: url('https://images.unsplash.com/photo-1508615070457-7baeba4003ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); 
+	background-size: cover; 
+	color: whitesmoke;
+}
+
 /* Create two equal columns that floats next to each other */
 .column {
 	float: left;
@@ -35,6 +41,7 @@ input[type=submit] {
 }
 
 h3 {
+	text-align: center;
 	color: #FF4136;
 	font-family: "Verdana", Times, serif;
 }

@@ -57,7 +57,7 @@ input[type=text] {
 
 .formSubmit {
 	background-color: rgba(17, 77, 134, 0.562);
-	color: yellow;
+	color: white;
 	position: absolute;
 	right: 0;
 	margin: 20px;
