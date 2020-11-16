@@ -5,6 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Assignments</title>
+	<link rel="icon" type="image/png" href="https://img.icons8.com/emoji/48/000000/dog-face.png"/>
 	<link rel="Stylesheet" href="main.css" type="text/css" />
 	<link rel="stylesheet"
 		href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
