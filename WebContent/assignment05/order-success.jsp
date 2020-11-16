@@ -11,9 +11,10 @@
 <body>
 	<nav class="navbar navbar-light bg-light">
 		<a class="navbar-brand" href="${pageContext.request.contextPath}/">
-		<img src="https://img.icons8.com/emoji/48/000000/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
+		<img src="images/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
     HOME
   </a>
+  <a class="navbar-brand" href="${pageContext.request.contextPath}/about.jsp">ABOUT</a>
   </nav>
 	<div class="container">
 		<h1 style="text-align: center; height: 80px; margin-top: 30px;">ORDER INFORMATION</h1>

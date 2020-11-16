@@ -5,19 +5,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Assignments</title>
-	<link rel="Stylesheet" href="main.css" type="text/css" />
-	<link rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" 
-				        			rel="stylesheet">
+	<link rel="icon" type="image/png" href="images/dog-face.png"/>
+	<link rel="Stylesheet" href="styles/main.css" type="text/css" />
+	<link rel="Stylesheet" href="styles/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
 	<!-- https://lab.lepture.com/github-cards/  -->
 </head>
 <body>
 	<nav class="navbar navbar-light bg-light">
 		<a class="navbar-brand" href="#">
-		<img src="https://img.icons8.com/emoji/48/000000/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
+		<img src="images/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
     HOME
   </a>
+  <a class="navbar-brand" href="${pageContext.request.contextPath}/about.jsp">ABOUT</a>
   </nav>
 	<div class="container">
 		<h1 style="text-align: center; height: 80px; margin-top: 30px;">NGUYỄN HUỲNH MINH TIẾN</h1>
@@ -30,7 +31,7 @@
 					<h5 class="card-title">Assignment 01</h5>
 					<p class="card-text">First web application with JSP</p>
 					<a href="${pageContext.request.contextPath}/assignment01"
-						class="btn btn-primary ">Go</a>
+						class="btn bg-info">Go</a>
 				</div>
 			</div>
 		</div>
@@ -44,7 +45,7 @@
 						<p class="card-text">Widget order form</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment02/ass02_01.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-success">Go</a>
 					</div>
 				</div>
 				<div class="card text-center border-success col-3 ml-3" style="width: 18rem;">
@@ -53,7 +54,7 @@
 						<p class="card-text">Complex input element</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment02/ass02_02.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-success">Go</a>
 					</div>
 					
 				</div>
@@ -70,7 +71,7 @@
 						<p class="card-text">First web application with JSP</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_01.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-warning">Go</a>
 					</div>
 				</div>
 				<div class="card text-center border-warning col-3 ml-3" style="width: 18rem;">
@@ -80,7 +81,7 @@
 						<p class="card-text">Widget order form</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_02.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-warning ">Go</a>
 					</div>
 				</div>
 				<div class="card text-center border-warning col-3 ml-3" style="width: 18rem;">
@@ -90,7 +91,7 @@
 						<p class="card-text">Complex input element</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_03.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-warning ">Go</a>
 					</div>
 				</div>
 			</div>
@@ -106,7 +107,7 @@
 						<p class="card-text">First web application with JSP</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_01.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-danger ">Go</a>
 					</div>
 				</div>
 				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
@@ -116,7 +117,7 @@
 						<p class="card-text">Widget order form</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_02.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-danger ">Go</a>
 					</div>
 				</div>
 				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
@@ -126,7 +127,7 @@
 						<p class="card-text">Complex input element</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_03.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-danger">Go</a>
 					</div>
 				</div>
 			</div>
@@ -144,6 +145,27 @@
 			</div>
 		</div>
 		<hr />
+	</div>
+	<div>
+		<div align="center">
+			<h4>Contact</h4>
+		  <a href="https://www.facebook.com/01.tien" alt="Facebook">
+		  	<img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" target="_blank" />
+		  </a>
+		  <a href="https://github.com/TienNHM" alt="Github">
+		  	<img src="https://img.icons8.com/fluent/48/000000/github.png"/>
+		  </a> 
+		  <a href="https://www.youtube.com/channel/UCaRr1SjyHm61RrLY-DIBm1g" alt="Youtube channel" target="_blank" >
+		  	<img src="https://img.icons8.com/fluent/48/000000/youtube-play.png"/>
+		  </a>
+		  <a href="https://linkedin.com/in/tien-nhm" target="_blank">
+		  	<img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/>
+		  </a>
+		  <a href="mailto:ngotienhoang09@gmail.com">
+		  	<img src="https://img.icons8.com/color/48/000000/gmail--v1.png"/>
+			</a>
+			<hr>
+		</div>
 	</div>
 	<!--
 		<div class="displayGithub">
