@@ -31,11 +31,13 @@
 <h3 align="center">A passionate developer from Vietnam </h3>
 <p align="center"><img src="https://img.icons8.com/color/48/000000/vietnam-circular.png"/></p>
 <p align="center"><img src="https://komarev.com/ghpvc/?username=tiennhm" alt="tiennhm" /> <img src="https://badges.pufler.dev/repos/TienNHM" alt="tiennhm" /> </p>
-<p align="center"><img src="https://raw.githubusercontent.com/wayou/t-rex-runner/gh-pages/assets/kumamon-runner.gif" alt="kumamon" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/wayou/t-rex-runner/gh-pages/assets/screenshot.gif" alt="kumamon" /></p>
 
 <p style="margin-left: 30%;">
 - ✍ I'm a student of: [Ho Chi Minh city University of Technology and Education](https://hcmute.edu.vn) (HCMUTE).
+
 - 👨‍💻 All of my projects are available at [https://github.com/tiennhm](https://github.com/tiennhm)
+
 </p>
 
 -----
@@ -47,14 +49,17 @@
 
 -----
 
-## Professional skills:
+## 💥 Professional skills:
 <p align="center">
-  <img src="https://devicons.github.io/devicon/devicon.git/icons/c/c-original.svg" alt="c" width="40" height="40"/>&nbsp;<img src="https://devicons.github.io/devicon/devicon.git/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>&nbsp;<img src="https://devicons.github.io/devicon/devicon.git/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>&nbsp;<img src="https://devicons.github.io/devicon/devicon.git/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/>&nbsp;<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>&nbsp;<img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/>&nbsp;<img src="https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg" alt="python" width="40" height="40"/>&nbsp
+  <img src="https://img.icons8.com/color/48/000000/c-programming.png"/>&nbsp;<img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>&nbsp;<img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png"/>&nbsp;<img src="https://img.icons8.com/color/48/000000/git.png"/>&nbsp;<img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="48" height="48"/>&nbsp;<img src="https://img.icons8.com/color/48/000000/python.png"/>&nbsp;<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/>&nbsp;<img src="https://img.icons8.com/color/48/000000/html-5.png"/>&nbsp;<img src="https://img.icons8.com/color/48/000000/css3.png"/>&nbsp;<img src="https://img.icons8.com/color/48/000000/bootstrap.png"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiennhm&layout=compact" alt="tiennhm" />&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=tiennhm&show_icons=true&count_private=true" alt="tiennhm" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiennhm" alt="tiennhm" width=35%/>
+  
+  <img src="https://github-readme-stats.vercel.app/api?username=tiennhm&show_icons=true&count_private=true" alt="tiennhm" width=35%/>
 </p>
+
   </textarea>
 </div> 
   <script type="text/javascript">
