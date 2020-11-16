@@ -5,15 +5,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Some thing error!</title>
-	<link type="text/css" rel="Stylesheet" href="main.css" />
+	<link type="text/css" rel="Stylesheet" href="styles/main.css" />
+	<link rel="Stylesheet" href="styles/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<nav class="navbar navbar-light bg-light">
 		<a class="navbar-brand" href="index.jsp">
-		<img src="https://img.icons8.com/emoji/48/000000/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
+		<img src="images/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
     HOME
   </a>
+  <a class="navbar-brand" href="${pageContext.request.contextPath}/about.jsp">ABOUT</a>
   </nav>
 	<div>
 		<form class="formSubmit"

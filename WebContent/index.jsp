@@ -5,20 +5,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Assignments</title>
-	<link rel="icon" type="image/png" href="https://img.icons8.com/emoji/48/000000/dog-face.png"/>
-	<link rel="Stylesheet" href="main.css" type="text/css" />
-	<link rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" 
-				        			rel="stylesheet">
+	<link rel="icon" type="image/png" href="images/dog-face.png"/>
+	<link rel="Stylesheet" href="styles/main.css" type="text/css" />
+	<link rel="Stylesheet" href="styles/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
 	<!-- https://lab.lepture.com/github-cards/  -->
 </head>
 <body>
 	<nav class="navbar navbar-light bg-light">
 		<a class="navbar-brand" href="#">
-		<img src="https://img.icons8.com/emoji/48/000000/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
+		<img src="images/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
     HOME
   </a>
+  <a class="navbar-brand" href="${pageContext.request.contextPath}/about.jsp">ABOUT</a>
   </nav>
 	<div class="container">
 		<h1 style="text-align: center; height: 80px; margin-top: 30px;">NGUYỄN HUỲNH MINH TIẾN</h1>
