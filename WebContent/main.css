@@ -11,10 +11,11 @@ body, html {
 h1 {
 	font-family: 'Anton', 'Bungee Shade', 'Goldman', 'Open Sans';
 	font-size: 8vw;
+	color: red;
 }
 
 h2 {
-	font-family: 'Goldman', 'Open Sans';
+	font-family: 'Anton', 'Bjola', 'Goldman', 'Open Sans';
 	font-size: 2vw;
 }
 

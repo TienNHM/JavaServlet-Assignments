@@ -30,7 +30,7 @@
 					<h5 class="card-title">Assignment 01</h5>
 					<p class="card-text">First web application with JSP</p>
 					<a href="${pageContext.request.contextPath}/assignment01"
-						class="btn btn-primary ">Go</a>
+						class="btn bg-info">Go</a>
 				</div>
 			</div>
 		</div>
@@ -44,7 +44,7 @@
 						<p class="card-text">Widget order form</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment02/ass02_01.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-success">Go</a>
 					</div>
 				</div>
 				<div class="card text-center border-success col-3 ml-3" style="width: 18rem;">
@@ -53,7 +53,7 @@
 						<p class="card-text">Complex input element</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment02/ass02_02.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-success">Go</a>
 					</div>
 					
 				</div>
@@ -70,7 +70,7 @@
 						<p class="card-text">First web application with JSP</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_01.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-warning">Go</a>
 					</div>
 				</div>
 				<div class="card text-center border-warning col-3 ml-3" style="width: 18rem;">
@@ -80,7 +80,7 @@
 						<p class="card-text">Widget order form</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_02.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-warning ">Go</a>
 					</div>
 				</div>
 				<div class="card text-center border-warning col-3 ml-3" style="width: 18rem;">
@@ -90,7 +90,7 @@
 						<p class="card-text">Complex input element</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_03.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-warning ">Go</a>
 					</div>
 				</div>
 			</div>
@@ -106,7 +106,7 @@
 						<p class="card-text">First web application with JSP</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_01.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-danger ">Go</a>
 					</div>
 				</div>
 				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
@@ -116,7 +116,7 @@
 						<p class="card-text">Widget order form</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_02.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-danger ">Go</a>
 					</div>
 				</div>
 				<div class="card text-center border-danger col-3 ml-3" style="width: 18rem;">
@@ -126,7 +126,7 @@
 						<p class="card-text">Complex input element</p>
 						<a
 							href="${pageContext.request.contextPath}/assignment03/ass03_03.jsp"
-							class="btn btn-primary ">Go</a>
+							class="btn bg-danger">Go</a>
 					</div>
 				</div>
 			</div>
@@ -144,6 +144,27 @@
 			</div>
 		</div>
 		<hr />
+	</div>
+	<div>
+		<div align="center">
+			<h4>Contact</h4>
+		  <a href="https://www.facebook.com/01.tien" alt="Facebook">
+		  	<img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" target="_blank" />
+		  </a>
+		  <a href="https://github.com/TienNHM" alt="Github">
+		  	<img src="https://img.icons8.com/fluent/48/000000/github.png"/>
+		  </a> 
+		  <a href="https://www.youtube.com/channel/UCaRr1SjyHm61RrLY-DIBm1g" alt="Youtube channel" target="_blank" >
+		  	<img src="https://img.icons8.com/fluent/48/000000/youtube-play.png"/>
+		  </a>
+		  <a href="https://linkedin.com/in/tien-nhm" target="_blank">
+		  	<img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/>
+		  </a>
+		  <a href="mailto:ngotienhoang09@gmail.com">
+		  	<img src="https://img.icons8.com/color/48/000000/gmail--v1.png"/>
+			</a>
+			<hr>
+		</div>
 	</div>
 	<!--
 		<div class="displayGithub">
