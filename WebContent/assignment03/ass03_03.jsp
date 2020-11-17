@@ -56,7 +56,7 @@ td {
 				</div>
 			</div>
 			<input type="hidden" name="action" value="formSubmit_ass03_03" /> <input
-				type="submit" value="PURCHASE" />
+				type="submit" value="Purchase" />
 		</form>
 	</div>
 </body>

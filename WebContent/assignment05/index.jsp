@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -21,7 +23,7 @@
 	%>
 	<nav class="navbar navbar-light bg-light">
 		<a class="navbar-brand" href="${pageContext.request.contextPath}/">
-		<img src="images/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
+		<img src="${pageContext.request.contextPath}/images/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
     HOME
   </a>
   <a class="navbar-brand" href="${pageContext.request.contextPath}/about.jsp">ABOUT</a>
@@ -82,12 +84,15 @@
 						class="row-form-label col-3 text-right">Your email:</label>
 				<input	type="email" name="customerEmail" value="${customerEmail}"
 						class="form-control col-6" />
-				<% if (customerEmailError.equals("")) {%>
-				<span class="align-self-center col-2.5 ml-2"><em>(Optional) </em>
-				<% } else { %>
-					<span class="align-self-center col-2.5 ml-2 text-danger">${customerEmailError}</span>
-				<% } %>
-				</span>
+						
+				<c:choose>
+					<c:when test="${customerEmailError.equals('') || customerEmailError==null}">
+						<span class="align-self-center col-2.5 ml-2"><em>(Optional)</em></span>
+					</c:when>
+					<c:otherwise>
+						<span class="align-self-center col-2.5 ml-2 text-danger">${customerEmailError}</span>
+					</c:otherwise>
+				</c:choose>
 			</div>
 			<div class="form-group row">
 				<div class="container">
@@ -154,7 +159,6 @@
 				  </div>
 				</div>
 			</div>
-			<br/>
 			<%  
 			String processor = request.getParameter("processor");
 			if (processor == null) processor = "Celeron D";

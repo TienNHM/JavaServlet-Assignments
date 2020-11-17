@@ -6,14 +6,14 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>Assignment 4 - 2</title>
-	<link href="${pageContext.request.contextPath}/assignment03/css/main.css" rel="Stylesheet" type="text/css">
-	<link href="${pageContext.request.contextPath}/assignment03/css/ass03_02.css" rel="Stylesheet" type="text/css">
+	<link href="${pageContext.request.contextPath}/assignment04/css/main.css" rel="Stylesheet" type="text/css">
+	<link href="${pageContext.request.contextPath}/assignment04/css/ass04_02.css" rel="Stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
 	<nav class="navbar navbar-light bg-light">
-		<a class="navbar-brand" href="../">
+		<a class="navbar-brand" href="${pageContext.request.contextPath}/">
 		<img src="images/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
     HOME
   </a>
@@ -44,7 +44,7 @@
 			<p>
 				You will shortly recieve an email confirmation at <%=email%>.
 			</p>
-			<input type="hidden" name="action" value="back_ass03_02" /> 
+			<input type="hidden" name="action" value="back_ass04_02" /> 
 			<input type="submit" value="Back" />
 		</form>
 	</div>

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(value = "/form_processing.jsp")
 public class Validate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+
 	public Validate() {
 		super();
 	}
@@ -24,6 +24,17 @@ public class Validate extends HttpServlet {
 			return "/error.jsp";
 		} else {
 			return "/assignment03/reciept_ass03_01.jsp";
+		}
+	}
+
+	private String FormSubmit_ass04_01(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String quantity = request.getParameter("quantity");
+		if (quantity.equals("")) {
+			request.setAttribute("backURL", "/assignment04/ass04_01.jsp");
+			return "/error.jsp";
+		} else {
+			return "/assignment04/reciept_ass04_01.jsp";
 		}
 	}
 
@@ -44,8 +55,24 @@ public class Validate extends HttpServlet {
 		}
 	}
 
-	private String FormSubmit_ass03_03(HttpServletRequest request, HttpServletResponse response)
+	private String FormSubmit_ass04_02(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		// Get the parameter values from the request
+		String name = request.getParameter("customerName");
+		String email = request.getParameter("customerEmail");
+		String quantity = request.getParameter("quantity");
+
+		// If any are empty, set the url to forward to to the error page.
+		// Otherwise, forward to the normal reciept
+		if (name.equals("") || email.equals("") || quantity.equals("")) {
+			request.setAttribute("backURL", "/assignment04/ass04_02.jsp");
+			return "/error.jsp";
+		} else {
+			return "/assignment04/reciept_ass04_02.jsp";
+		}
+	}
+
+	private void ass(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String monitor = request.getParameter("monitor");
 		String processor = request.getParameter("processor");
 		String[] peripherals = request.getParameterValues("peripherals");
@@ -72,7 +99,18 @@ public class Validate extends HttpServlet {
 
 		request.setAttribute("processor", processor_submit);
 		request.setAttribute("accessories", accessories);
+	}
+
+	private String FormSubmit_ass03_03(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		ass(request, response);
 		return "/assignment03/reciept_ass03_03.jsp";
+	}
+
+	private String FormSubmit_ass04_03(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		ass(request, response);
+		return "/assignment04/reciept_ass04_03.jsp";
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -80,14 +118,14 @@ public class Validate extends HttpServlet {
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
 		request.setCharacterEncoding("UTF-8");
-		
+
 		// Get current action
 		String action = request.getParameter("action");
 		if (action.equals("back")) {
 			request.getRequestDispatcher(request.getParameter("backURL")).forward(request, response);
 		} else {
 			String url = ""; // url to forward to
-			
+
 			if (action.equals("formSubmit_ass03_01")) {
 				url = FormSubmit_ass03_01(request, response);
 			} else if (action.equals("formSubmit_ass03_02")) {
@@ -100,8 +138,20 @@ public class Validate extends HttpServlet {
 				url = "/assignment03/ass03_02.jsp";
 			} else if (action.equals("back_ass03_03")) {
 				url = "/assignment03/ass03_03.jsp";
+			} else if (action.equals("formSubmit_ass04_01")) {
+				url = FormSubmit_ass04_01(request, response);
+			} else if (action.equals("formSubmit_ass04_02")) {
+				url = FormSubmit_ass04_02(request, response);
+			} else if (action.equals("formSubmit_ass04_03")) {
+				url = FormSubmit_ass04_03(request, response);
+			} else if (action.equals("back_ass04_01")) {
+				url = "/assignment04/ass04_01.jsp";
+			} else if (action.equals("back_ass04_02")) {
+				url = "/assignment04/ass04_02.jsp";
+			} else if (action.equals("back_ass04_03")) {
+				url = "/assignment04/ass04_03.jsp";
 			}
-			
+
 			// Create the dispatcher from the url and perform the forward
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
 			dispatcher.forward(request, response);

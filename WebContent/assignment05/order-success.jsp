@@ -101,7 +101,7 @@
 			  <input type="text" class="form-control" placeholder="${peripherals}" readonly>
 			</div>
 			<input style="align: center; margin-left: 45%; margin-top: 20px;" type="Submit" 
-				value="OK" name="OK" class="btn btn-primary text-center"/>
+				value="Back" name="Back" class="btn btn-primary text-center"/>
 		</form>
 	</div>
 </body>
