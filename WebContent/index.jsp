@@ -167,12 +167,5 @@
 			<hr>
 		</div>
 	</div>
-	<!--
-		<div class="displayGithub">
-			<div class="github-card" data-github="tiennhm" data-width="350"
-				data-height="" data-theme="default"></div>
-			<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-			</div>
-			 -->
 </body>
 </html>
