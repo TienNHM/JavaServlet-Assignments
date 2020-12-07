@@ -18,11 +18,11 @@
 </head>
 <body>
 	<nav class="navbar navbar-light bg-light">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="${pageContext.request.contextPath}/">
 		<img src="images/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
     HOME
-  </a>
-  <a class="navbar-brand" href="${pageContext.request.contextPath}/about.jsp">ABOUT</a>
+	  </a>
+	  <a class="navbar-brand" href="${pageContext.request.contextPath}/about.jsp">ABOUT</a>
   </nav>
 <div>
   <textarea id="demo1" disabled>
@@ -60,6 +60,9 @@
   <img src="https://github-readme-stats.vercel.app/api?username=tiennhm&show_icons=true&count_private=true" alt="tiennhm" width=35%/>
 </p>
 
+<p align="center" style="color: red;">
+	All information is taken from my Github!
+</p>
   </textarea>
 </div> 
   <script type="text/javascript">

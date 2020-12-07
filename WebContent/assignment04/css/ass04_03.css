@@ -37,6 +37,7 @@ input[type=submit] {
 h3 {
 	color: #FF4136;
 	font-family: "Verdana", Times, serif;
+	text-align: center;
 }
 
 table {

@@ -7,8 +7,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Assignment 4 - 3</title>
-	<link rel="Stylesheet" href="${pageContext.request.contextPath}/assignment03/css/main.css" type="text/css" />
-	<link rel="Stylesheet" href="${pageContext.request.contextPath}/assignment03/css/ass03_03.css" type="text/css" />
+	<link rel="Stylesheet" href="${pageContext.request.contextPath}/assignment04/css/main.css" type="text/css" />
+	<link rel="Stylesheet" href="${pageContext.request.contextPath}/assignment04/css/ass04_03.css" type="text/css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 	<style type="text/css">
 		table {
@@ -25,7 +25,7 @@
 
 <body>
 	<nav class="navbar navbar-light bg-light">
-		<a class="navbar-brand" href="../">
+		<a class="navbar-brand" href="${pageContext.request.contextPath}/">
 		<img src="images/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
     HOME
   </a>
@@ -33,7 +33,7 @@
   </nav>
 	<div class="bg">
 		<form class="formSubmit"
-			action="../form_processing.jsp" method="post">
+			action="${pageContext.request.contextPath}/form_processing.jsp" method="post">
 
 			<div class="row">
 				<div class="column">
@@ -55,8 +55,8 @@
 					</select>
 				</div>
 			</div>
-			<input type="hidden" name="action" value="formSubmit_ass03_03" /> <input
-				type="submit" value="PURCHASE" />
+			<input type="hidden" name="action" value="formSubmit_ass04_03" /> <input
+				type="submit" value="Purchase" />
 		</form>
 	</div>
 </body>

@@ -106,7 +106,7 @@
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
 						<p class="card-text">First web application with JSP</p>
 						<a
-							href="${pageContext.request.contextPath}/assignment03/ass03_01.jsp"
+							href="${pageContext.request.contextPath}/assignment04/ass04_01.jsp"
 							class="btn bg-danger ">Go</a>
 					</div>
 				</div>
@@ -116,7 +116,7 @@
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
 						<p class="card-text">Widget order form</p>
 						<a
-							href="${pageContext.request.contextPath}/assignment03/ass03_02.jsp"
+							href="${pageContext.request.contextPath}/assignment04/ass04_02.jsp"
 							class="btn bg-danger ">Go</a>
 					</div>
 				</div>
@@ -126,7 +126,7 @@
 						<h6 class="card-subtitle mb-2 text-muted">(Servlet)</h6>
 						<p class="card-text">Complex input element</p>
 						<a
-							href="${pageContext.request.contextPath}/assignment03/ass03_03.jsp"
+							href="${pageContext.request.contextPath}/assignment04/ass04_03.jsp"
 							class="btn bg-danger">Go</a>
 					</div>
 				</div>
