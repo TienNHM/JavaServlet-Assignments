@@ -21,8 +21,8 @@
 		<a class="navbar-brand" href="${pageContext.request.contextPath}/">
 		<img src="images/dog-face.png" width="36" height="36" class="d-inline-block align-top" alt="" loading="lazy"/>
     HOME
-  </a>
-  <a class="navbar-brand" href="${pageContext.request.contextPath}/about.jsp">ABOUT</a>
+	  </a>
+	  <a class="navbar-brand" href="${pageContext.request.contextPath}/about.jsp">ABOUT</a>
   </nav>
 <div>
   <textarea id="demo1" disabled>
